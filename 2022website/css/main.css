@@ -251,7 +251,7 @@ nav li a {
 
 nav li a:hover {
   font-weight: bold;
-  color: var(--primary-color)
+  color: var(--primary-color);
 }
 
 .mobile-menu-exit {
@@ -264,7 +264,7 @@ nav li a:hover {
 @media only screen and (min-width: 768px) {
   .mobile-menu,
   .mobile-menu-exit {
-  display: none;
+    display: none;
   }
 
   .navbar .container {
