@@ -51,10 +51,16 @@ body {
 .navbar .mobile-menu {
   cursor: pointer;
   color: black;
+  position: relative;
+  bottom: 8px;
 }
 
 a {
-  color: #444444;
+  color: black;
+}
+
+a:hover {
+  color: var(--primary-color);
 }
 
 ul {
@@ -97,10 +103,18 @@ section {
 .left-col .watch-video-cta {
   display: block;
   margin-top: 1em;
+  position: relative;
+  bottom: 15px;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .left-col .watch-video-cta img {
   margin-right: 0.5em;
+  height: 35px;
+  width: 35px;
+  position: relative;
+  top: 12px;
 }
 
 .hero-img {
@@ -250,8 +264,9 @@ nav li a:hover {
 @media only screen and (min-width: 768px) {
   .mobile-menu,
   .mobile-menu-exit {
-    display: none;
+  display: none;
   }
+
   .navbar .container {
     display: -ms-grid;
     display: grid;
