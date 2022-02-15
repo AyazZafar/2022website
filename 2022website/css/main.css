@@ -404,7 +404,14 @@ nav li a:hover {
 }
 
 @media only screen and (min-width: 1450px) {
-  .features-section:before {
+
+@import 'node_modules/aos/src/sass/aos.scss';
+
+[data-aos="zoom-y-out"] {
+  transform: scaleX(1.03);
+  opacity: 0;
+  transition-property: transform, opacity;
+}  .features-section:before {
     content: "";
     position: absolute;
     width: 10%;
